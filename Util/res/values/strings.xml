@@ -7,5 +7,8 @@
     <string name="firsttext">Hello Detail Text</string>
     <string name="Start">Start Activity</string>
     <string name="closeActivity">Close</string>
+    <string name="loginuserText">User: </string>
+    <string name="passwordText">PassWord: </string>
+     
 
 </resources>
