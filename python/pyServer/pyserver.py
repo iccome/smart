@@ -4,7 +4,8 @@ import json
 import pprint
 import cgi
 
-json1 = {"key": "value"}
+#json1 = {"key": "value"}
+json1 = ["key", "value"]
 json2 = {"key1": "value1"}
 
 class MyRequestHandler (BaseHTTPRequestHandler) :
@@ -42,20 +43,19 @@ class MyRequestHandler (BaseHTTPRequestHandler) :
             self.send_header("Content-type:", "text/html")
             # send a blank line to end headers:
             self.wfile.write("\n")
-            print 'Server connect success'
+
             #send response:
             json.dump(json1, self.wfile)
             ctype, pdict = cgi.parse_header(self.headers.getheader('content-type'))
             if ctype == 'multipart/form-data':
                 postvars = cgi.parse_multipart(self.rfile, pdict)
             elif ctype == 'application/x-www-form-urlencoded':
-                print"APPLICATION UNLENCODED"
                 length = int(self.headers.getheader('content-length'))
                 postvars = cgi.parse_qs(self.rfile.read(length), keep_blank_values=1)
             else:
                 postvars = {}
         print postvars
-server = HTTPServer(("localhost", 6665), MyRequestHandler)
+server = HTTPServer(("192.168.7.2", 6665), MyRequestHandler)
 
 server.serve_forever()
 
