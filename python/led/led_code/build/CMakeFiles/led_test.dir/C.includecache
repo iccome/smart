@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/led.h
+stdio.h
+-
+stdlib.h
+-
+fcntl.h
+-
+unistd.h
+-
+
+/home/zjh/work/beaglebone/module/led/test/test.c
+stdio.h
+-
+stdlib.h
+-
+fcntl.h
+-
+unistd.h
+-
+led.h
+/home/zjh/work/beaglebone/module/led/test/led.h
+

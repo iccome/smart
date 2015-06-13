@@ -1,0 +1,1 @@
+/usr/bin/gcc  -fPIC -W -g -O2 -Wdeclaration-after-statement   -shared -Wl,-soname,libbeaglebone_led.so -o libbeaglebone_led.so CMakeFiles/beaglebone_led.dir/function/led.c.o -L/home/zjh/work/beaglebone/module/led/. -lpthread -lrt -ldl -Wl,-rpath,/home/zjh/work/beaglebone/module/led/. 

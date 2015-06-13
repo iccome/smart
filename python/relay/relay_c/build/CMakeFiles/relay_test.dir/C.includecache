@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/relay.h
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+string.h
+-
+
+/home/zjh/work/beaglebone/module/relay/test/test.c
+stdio.h
+-
+stdlib.h
+-
+fcntl.h
+-
+unistd.h
+-
+relay.h
+/home/zjh/work/beaglebone/module/relay/test/relay.h
+

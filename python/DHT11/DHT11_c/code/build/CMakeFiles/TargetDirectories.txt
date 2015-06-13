@@ -1,0 +1,2 @@
+/home/zjh/work/beaglebone/module/dht11/code/build/CMakeFiles/beaglebone_dht.dir
+/home/zjh/work/beaglebone/module/dht11/code/build/CMakeFiles/dht_test.dir

@@ -1,0 +1,2 @@
+/home/zjh/work/beaglebone/module/relay/build/CMakeFiles/beaglebone_relay.dir
+/home/zjh/work/beaglebone/module/relay/build/CMakeFiles/relay_test.dir

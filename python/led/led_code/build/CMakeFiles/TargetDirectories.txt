@@ -1,0 +1,2 @@
+/home/zjh/work/beaglebone/module/led/build/CMakeFiles/beaglebone_led.dir
+/home/zjh/work/beaglebone/module/led/build/CMakeFiles/led_test.dir
