@@ -13,7 +13,11 @@
 #include <fcntl.h>
 
 #include <unistd.h>
-
+enum{
+	Success = 0,
+	ParamErr,
+	Fail
+};
 int BoneLedOnOff(int ledNum, char onOff);
 
 #endif
